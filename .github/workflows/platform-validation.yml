@@ -1,0 +1,61 @@
+name: macOS and Linux validation
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: platform-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  native-runtime:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-22.04]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - uses: actions/cache@v4
+        with:
+          path: runtime/stt/
+          key: whisper-b4938-base-${{ runner.os }}-${{ runner.arch }}-v1
+      - run: npm ci
+      - run: npm run stt:prepare
+      - run: npm run check
+      - name: Server and real speech checks
+        run: |
+          node scripts/smoke-server.js --output=debug-artifacts/platform/server.json
+          node scripts/prepare-speech-fixture.js debug-artifacts/platform/jfk.wav
+          node scripts/live-dictation-smoke.js --audio=debug-artifacts/platform/jfk.wav --output=debug-artifacts/platform/live-dictation.json
+      - name: Electron startup, real speech, and shutdown
+        env:
+          OLLAMA_URL: http://127.0.0.1:1
+          LECTURE_COPILOT_SMOKE_RESULT: debug-artifacts/platform/desktop.json
+          LECTURE_COPILOT_SMOKE_AUDIO: debug-artifacts/platform/jfk.wav
+          LECTURE_COPILOT_SMOKE_USER_DATA: debug-artifacts/platform/user-data
+        run: |
+          if [ "$RUNNER_OS" = Linux ]; then
+            xvfb-run -a node_modules/.bin/electron --no-sandbox .
+          else
+            node_modules/.bin/electron .
+          fi
+          node --input-type=module -e "import fs from 'node:fs'; import assert from 'node:assert/strict'; assert.equal(JSON.parse(fs.readFileSync(process.env.LECTURE_COPILOT_SMOKE_RESULT)).ok, true)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: platform-validation-${{ runner.os }}-${{ runner.arch }}
+          path: debug-artifacts/platform/
+          retention-days: 3

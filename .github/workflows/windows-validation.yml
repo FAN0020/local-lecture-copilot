@@ -1,0 +1,62 @@
+name: Windows x64 validation
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+      - version-c-completed
+
+permissions:
+  contents: read
+
+concurrency:
+  group: windows-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows-x64:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Cache managed Whisper runtime
+        uses: actions/cache@v4
+        with:
+          path: runtime/stt/win32-x64
+          key: whisper-b4938-base-win32-x64-v1
+
+      - name: Run Windows validation and package build
+        shell: powershell
+        run: powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File .\scripts\test-windows.ps1 -Mode Full -SkipInstaller -LiveAudio
+
+      - name: Upload Windows diagnostics
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-validation-diagnostics
+          path: debug-artifacts/windows/
+          if-no-files-found: warn
+          retention-days: 3
+
+      - name: Upload validated Windows packages
+        if: success()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: local-lecture-copilot-windows-x64
+          path: |
+            release/*.exe
+            release/*.zip
+          if-no-files-found: error
+          retention-days: 3

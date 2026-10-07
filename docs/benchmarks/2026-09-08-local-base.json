@@ -1,0 +1,1628 @@
+{
+  "hardware": {
+    "cpu": "Apple M5 Pro",
+    "cores": 15,
+    "memoryGiB": 24
+  },
+  "units": {
+    "cpu": "percent of one core",
+    "memory": "MiB unless otherwise named",
+    "power": "whole-Mac estimate in watts"
+  },
+  "baseOnly": {
+    "baseline": {
+      "startUtc": "2026-09-08T11:41:20.875000+00:00",
+      "endUtc": "2026-09-08T11:42:20.875000+00:00",
+      "durationSeconds": 60.0,
+      "cpuCorePercent": {
+        "clientMean": 0.37266854511717423,
+        "serverMean": 0.380094203210227,
+        "whisperMean": 0.0,
+        "totalMean": 0.7527627483274013,
+        "clientSamples": {
+          "mean": 0.37264628008769607,
+          "p95": 1.123000000000003,
+          "max": 2.6793034825870627,
+          "min": 0.1281718281718205,
+          "samples": 58
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 183.68183135986328,
+        "p95": 183.68183135986328,
+        "max": 183.68183135986328,
+        "min": 183.68183135986328,
+        "samples": 16
+      },
+      "groupRssMiB": {
+        "mean": 424.439453125,
+        "p95": 424.546875,
+        "max": 424.546875,
+        "min": 424.34375,
+        "samples": 16
+      },
+      "inferenceCount": 0,
+      "inferenceDurationMs": null,
+      "inferenceCpuCorePercent": null,
+      "inferencePeakRssMiB": null,
+      "apiLatencyMs": {
+        "mean": 1.9037474958167877,
+        "p95": 13.53316701715812,
+        "max": 13.53316701715812,
+        "min": 0.9474160033278167,
+        "samples": 16
+      },
+      "independentTaskMs": {
+        "mean": 5.63002098351717,
+        "p95": 5.743916961364448,
+        "max": 5.743916961364448,
+        "min": 5.516125005669892,
+        "samples": 2
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.357635266666666,
+        "p95": 21.938175,
+        "max": 23.887871,
+        "min": 21.069823,
+        "samples": 60
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 7.83288,
+        "p95": 7.83288,
+        "max": 7.83288,
+        "min": 7.83288,
+        "samples": 4
+      },
+      "batteryPercentFirstLast": [
+        39,
+        39
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 0,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 0,
+      "maxLlmQueued": 0
+    },
+    "speech": {
+      "startUtc": "2026-09-08T11:42:25.875000+00:00",
+      "endUtc": "2026-09-08T11:53:00.804000+00:00",
+      "durationSeconds": 634.929,
+      "cpuCorePercent": {
+        "clientMean": 10.89367522930861,
+        "serverMean": 0.757505277512982,
+        "whisperMean": 9.808970766810148,
+        "totalMean": 21.460151273631737,
+        "clientSamples": {
+          "mean": 10.894036511312006,
+          "p95": 42.062985074626894,
+          "max": 48.58695219123481,
+          "min": 5.473752495009998,
+          "samples": 632
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 329.7143290193775,
+        "p95": 525.2482223510742,
+        "max": 832.5327682495117,
+        "min": 240.04232788085938,
+        "samples": 632
+      },
+      "groupRssMiB": {
+        "mean": 534.8709701344936,
+        "p95": 657.765625,
+        "max": 815.34375,
+        "min": 479.203125,
+        "samples": 632
+      },
+      "inferenceCount": 66,
+      "inferenceDurationMs": {
+        "mean": 620.1579419545667,
+        "p95": 692.5289170001633,
+        "max": 746.6613339998294,
+        "min": 528.0665410000365,
+        "samples": 66
+      },
+      "inferenceCpuCorePercent": {
+        "mean": 152.24053728705678,
+        "p95": 157.90786557060426,
+        "max": 158.83158551125084,
+        "min": 137.37565982348207,
+        "samples": 66
+      },
+      "inferencePeakRssMiB": {
+        "mean": 277.5116003787879,
+        "p95": 278.890625,
+        "max": 280.4375,
+        "min": 274.65625,
+        "samples": 66
+      },
+      "apiLatencyMs": {
+        "mean": 3.0336681674374564,
+        "p95": 4.878874984569848,
+        "max": 7.213541015516967,
+        "min": 1.0788749787025154,
+        "samples": 632
+      },
+      "independentTaskMs": {
+        "mean": 5.535968219942694,
+        "p95": 5.763624969404191,
+        "max": 6.495249981526285,
+        "min": 5.214500008150935,
+        "samples": 63
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.374710116719243,
+        "p95": 21.856255,
+        "max": 31.014911,
+        "min": 21.037055,
+        "samples": 634
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 9.897399064,
+        "p95": 19.769105,
+        "max": 19.769105,
+        "min": 6.297872,
+        "samples": 125
+      },
+      "batteryPercentFirstLast": [
+        39,
+        36
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 1,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 0,
+      "maxLlmQueued": 0
+    },
+    "speechFirstTwoMinutes": {
+      "startUtc": "2026-09-08T11:42:35.875000+00:00",
+      "endUtc": "2026-09-08T11:44:35.875000+00:00",
+      "durationSeconds": 120.0,
+      "cpuCorePercent": {
+        "clientMean": 10.381779114380022,
+        "serverMean": 0.515295839638393,
+        "whisperMean": 8.833333333333334,
+        "totalMean": 19.73040828735175,
+        "clientSamples": {
+          "mean": 10.38432394976111,
+          "p95": 36.53643643643644,
+          "max": 42.062985074626894,
+          "min": 5.473752495009998,
+          "samples": 119
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 309.03582090490005,
+        "p95": 462.37091064453125,
+        "max": 696.8871307373047,
+        "min": 261.66739654541016,
+        "samples": 119
+      },
+      "groupRssMiB": {
+        "mean": 516.219537815126,
+        "p95": 532.46875,
+        "max": 778.453125,
+        "min": 479.203125,
+        "samples": 119
+      },
+      "inferenceCount": 11,
+      "inferenceDurationMs": {
+        "mean": 627.7625453636812,
+        "p95": 660.0247920001857,
+        "max": 660.0247920001857,
+        "min": 582.6414169999771,
+        "samples": 11
+      },
+      "inferenceCpuCorePercent": {
+        "mean": 153.47804352267798,
+        "p95": 158.83158551125084,
+        "max": 158.83158551125084,
+        "min": 146.31729439594176,
+        "samples": 11
+      },
+      "inferencePeakRssMiB": {
+        "mean": 277.7457386363636,
+        "p95": 278.90625,
+        "max": 278.90625,
+        "min": 277.0,
+        "samples": 11
+      },
+      "apiLatencyMs": {
+        "mean": 1.7309359474373716,
+        "p95": 2.238374960143119,
+        "max": 2.8976670000702143,
+        "min": 1.2782919802702963,
+        "samples": 119
+      },
+      "independentTaskMs": {
+        "mean": 5.519859820858321,
+        "p95": 5.763999943155795,
+        "max": 5.763999943155795,
+        "min": 5.370916973333806,
+        "samples": 11
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.339203266666665,
+        "p95": 21.774335,
+        "max": 24.068095,
+        "min": 21.037055,
+        "samples": 120
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 14.303463086956521,
+        "p95": 19.769105,
+        "max": 19.769105,
+        "min": 8.776868,
+        "samples": 23
+      },
+      "batteryPercentFirstLast": [
+        39,
+        38
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 1,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 0,
+      "maxLlmQueued": 0
+    },
+    "speechLastTwoMinutes": {
+      "startUtc": "2026-09-08T11:51:00.804000+00:00",
+      "endUtc": "2026-09-08T11:53:00.804000+00:00",
+      "durationSeconds": 120.0,
+      "cpuCorePercent": {
+        "clientMean": 7.529478919503154,
+        "serverMean": 0.8969713698827617,
+        "whisperMean": 9.549999999999999,
+        "totalMean": 17.976450289385916,
+        "clientSamples": {
+          "mean": 7.52963330530203,
+          "p95": 10.495209580838043,
+          "max": 21.373678963110358,
+          "min": 6.0884115884116135,
+          "samples": 118
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 312.333781971651,
+        "p95": 426.68933868408203,
+        "max": 597.6436996459961,
+        "min": 281.9703826904297,
+        "samples": 119
+      },
+      "groupRssMiB": {
+        "mean": 524.5073529411765,
+        "p95": 556.25,
+        "max": 794.359375,
+        "min": 496.84375,
+        "samples": 119
+      },
+      "inferenceCount": 12,
+      "inferenceDurationMs": {
+        "mean": 629.0757674166622,
+        "p95": 746.6613339998294,
+        "max": 746.6613339998294,
+        "min": 558.0734170000069,
+        "samples": 12
+      },
+      "inferenceCpuCorePercent": {
+        "mean": 151.84805001779887,
+        "p95": 158.16126110541012,
+        "max": 158.16126110541012,
+        "min": 146.11031446915624,
+        "samples": 12
+      },
+      "inferencePeakRssMiB": {
+        "mean": 277.72265625,
+        "p95": 278.90625,
+        "max": 278.90625,
+        "min": 276.828125,
+        "samples": 12
+      },
+      "apiLatencyMs": {
+        "mean": 4.394104646053165,
+        "p95": 5.318916053511202,
+        "max": 7.213541015516967,
+        "min": 3.5117079969495535,
+        "samples": 119
+      },
+      "independentTaskMs": {
+        "mean": 5.549624906658816,
+        "p95": 5.849124980159104,
+        "max": 5.849124980159104,
+        "min": 5.420250003226101,
+        "samples": 12
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.403510466666667,
+        "p95": 22.216703,
+        "max": 26.984447,
+        "min": 21.053439,
+        "samples": 120
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 6.877081739130435,
+        "p95": 7.408024,
+        "max": 7.408024,
+        "min": 6.297872,
+        "samples": 23
+      },
+      "batteryPercentFirstLast": [
+        36,
+        36
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 1,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 0,
+      "maxLlmQueued": 0
+    },
+    "asr": {
+      "schemaVersion": 1,
+      "status": "complete",
+      "models": {
+        "provisional": "base",
+        "revised": "base",
+        "highQuality": "base"
+      },
+      "pending": {
+        "provisional": 0,
+        "revised": 0,
+        "highQuality": 0
+      },
+      "backlog": {
+        "transcription": {
+          "queued": 0,
+          "active": 0,
+          "total": 0
+        },
+        "refinement": {
+          "queued": 0,
+          "active": 0,
+          "total": 0
+        },
+        "highQuality": {
+          "queued": 0,
+          "active": 0,
+          "total": 0
+        }
+      },
+      "failed": {
+        "provisional": 0,
+        "revised": 0,
+        "highQuality": 0
+      },
+      "updatedAt": "2026-09-08T11:53:00.805Z",
+      "completed": {
+        "provisional": 66,
+        "revised": 0,
+        "highQuality": 0
+      },
+      "segmentCount": 66
+    },
+    "postStopIdle": {
+      "startUtc": "2026-09-08T11:53:10.804000+00:00",
+      "endUtc": "2026-09-08T11:54:20.804000+00:00",
+      "durationSeconds": 70.0,
+      "cpuCorePercent": {
+        "clientMean": 0.3465543644716731,
+        "serverMean": 0.5680591167639027,
+        "whisperMean": 0.0,
+        "totalMean": 0.9146134812355758,
+        "clientSamples": {
+          "mean": 0.3468010899956217,
+          "p95": 0.2968095712863637,
+          "max": 5.929112662013736,
+          "min": 0.104885343968101,
+          "samples": 69
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 295.84950147356307,
+        "p95": 300.59886169433594,
+        "max": 300.63011169433594,
+        "min": 282.14459228515625,
+        "samples": 70
+      },
+      "groupRssMiB": {
+        "mean": 525.2756696428571,
+        "p95": 542.625,
+        "max": 543.140625,
+        "min": 484.921875,
+        "samples": 70
+      },
+      "inferenceCount": 0,
+      "inferenceDurationMs": null,
+      "inferenceCpuCorePercent": null,
+      "inferencePeakRssMiB": null,
+      "apiLatencyMs": {
+        "mean": 3.718820171863107,
+        "p95": 4.61033295141533,
+        "max": 4.7424170188605785,
+        "min": 3.2962910481728613,
+        "samples": 70
+      },
+      "independentTaskMs": {
+        "mean": 5.519416723732969,
+        "p95": 5.761709006037563,
+        "max": 5.761709006037563,
+        "min": 5.43170899618417,
+        "samples": 7
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.244663685714286,
+        "p95": 21.757951,
+        "max": 22.708223,
+        "min": 21.053439,
+        "samples": 70
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 8.412539928571428,
+        "p95": 8.457985,
+        "max": 8.457985,
+        "min": 8.245908,
+        "samples": 14
+      },
+      "batteryPercentFirstLast": [
+        36,
+        36
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 0,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 0,
+      "maxLlmQueued": 0
+    },
+    "audioSeconds": 634.165,
+    "speechChunks": 66,
+    "transcribedChunks": 66,
+    "failedChunks": 0,
+    "decodeAudioRatio": 0.06454223138930941
+  },
+  "baseWith4B": {
+    "baseline": {
+      "startUtc": "2026-09-08T12:13:35.331000+00:00",
+      "endUtc": "2026-09-08T12:14:35.331000+00:00",
+      "durationSeconds": 60.0,
+      "cpuCorePercent": {
+        "clientMean": 0.49868587740486137,
+        "serverMean": 0.8441684305979718,
+        "whisperMean": 0.0,
+        "ollamaMean": 0.0220895833333401,
+        "ollamaSampleCpu": {
+          "mean": 0.022390953399710173,
+          "p95": 0.05280470366290559,
+          "max": 0.7897747922411799,
+          "min": 0.0,
+          "samples": 59
+        },
+        "totalMean": 1.364943891336173,
+        "clientSamples": {
+          "mean": 0.4990204668709321,
+          "p95": 1.959063745019914,
+          "max": 9.327472527472523,
+          "min": 0.10089730807579611,
+          "samples": 59
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 307.9566318511963,
+        "p95": 473.8603210449219,
+        "max": 474.25133514404297,
+        "min": 270.0794372558594,
+        "samples": 60
+      },
+      "groupRssMiB": {
+        "mean": 378.9927083333333,
+        "p95": 393.09375,
+        "max": 395.921875,
+        "min": 366.828125,
+        "samples": 60
+      },
+      "ollamaFootprintMiB": {
+        "mean": 49.62584686279297,
+        "p95": 49.62584686279297,
+        "max": 49.62584686279297,
+        "min": 49.62584686279297,
+        "samples": 60
+      },
+      "inferenceCount": 0,
+      "inferenceDurationMs": null,
+      "inferenceCpuCorePercent": null,
+      "inferencePeakRssMiB": null,
+      "apiLatencyMs": {
+        "mean": 1.2383825679232057,
+        "p95": 1.889707986265421,
+        "max": 1.9982500234618783,
+        "min": 0.6976249860599637,
+        "samples": 60
+      },
+      "independentTaskMs": {
+        "mean": 5.487916835894187,
+        "p95": 5.559500015806407,
+        "max": 5.559500015806407,
+        "min": 5.423417023848742,
+        "samples": 6
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.281176600000002,
+        "p95": 21.725183,
+        "max": 22.315007,
+        "min": 21.053439,
+        "samples": 60
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 8.682811083333334,
+        "p95": 8.860768,
+        "max": 8.860768,
+        "min": 6.725285,
+        "samples": 12
+      },
+      "batteryPercentFirstLast": [
+        31,
+        31
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 0,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 0,
+      "maxLlmQueued": 0
+    },
+    "speech": {
+      "startUtc": "2026-09-08T12:14:40.331000+00:00",
+      "endUtc": "2026-09-08T12:18:03.264000+00:00",
+      "durationSeconds": 202.933,
+      "cpuCorePercent": {
+        "clientMean": 22.805871036517335,
+        "serverMean": 1.2457725200614824,
+        "whisperMean": 10.92478798421154,
+        "ollamaMean": 12.09972552517333,
+        "ollamaSampleCpu": {
+          "mean": 12.166332841269902,
+          "p95": 71.39549689794396,
+          "max": 99.87301139656118,
+          "min": 0.0,
+          "samples": 201
+        },
+        "totalMean": 47.076157065963685,
+        "clientSamples": {
+          "mean": 22.801796672607654,
+          "p95": 41.46125498007964,
+          "max": 45.712151394422456,
+          "min": 5.578121878121659,
+          "samples": 201
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 4731.146023400939,
+        "p95": 5928.073631286621,
+        "max": 6166.496604919434,
+        "min": 369.03849029541016,
+        "samples": 202
+      },
+      "groupRssMiB": {
+        "mean": 3549.451036509901,
+        "p95": 4301.0,
+        "max": 4668.296875,
+        "min": 385.046875,
+        "samples": 202
+      },
+      "ollamaFootprintMiB": {
+        "mean": 4301.823826667106,
+        "p95": 5612.083686828613,
+        "max": 5612.521186828613,
+        "min": 47.82897186279297,
+        "samples": 202
+      },
+      "inferenceCount": 23,
+      "inferenceDurationMs": {
+        "mean": 645.8576739130481,
+        "p95": 733.3721249999944,
+        "max": 751.109625000041,
+        "min": 564.644083000021,
+        "samples": 23
+      },
+      "inferenceCpuCorePercent": {
+        "mean": 149.35103437597402,
+        "p95": 155.77509816375252,
+        "max": 157.6397247941045,
+        "min": 136.2800371603251,
+        "samples": 23
+      },
+      "inferencePeakRssMiB": {
+        "mean": 277.4592391304348,
+        "p95": 278.5625,
+        "max": 278.90625,
+        "min": 274.84375,
+        "samples": 23
+      },
+      "apiLatencyMs": {
+        "mean": 2.4568750315557906,
+        "p95": 4.2092090006917715,
+        "max": 20.138958003371954,
+        "min": 0.7214589859358966,
+        "samples": 202
+      },
+      "independentTaskMs": {
+        "mean": 5.977662454824895,
+        "p95": 10.763540980406106,
+        "max": 10.763540980406106,
+        "min": 5.412709026131779,
+        "samples": 20
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.701742524752476,
+        "p95": 23.707647,
+        "max": 34.734079,
+        "min": 21.053439,
+        "samples": 202
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 12.819879461538461,
+        "p95": 24.71745,
+        "max": 24.71745,
+        "min": 6.725285,
+        "samples": 39
+      },
+      "batteryPercentFirstLast": [
+        31,
+        30
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 1,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 1,
+      "maxLlmQueued": 0
+    },
+    "speechFirstTwoMinutes": {
+      "startUtc": "2026-09-08T12:14:50.331000+00:00",
+      "endUtc": "2026-09-08T12:16:50.331000+00:00",
+      "durationSeconds": 120.0,
+      "cpuCorePercent": {
+        "clientMean": 29.30040448223738,
+        "serverMean": 1.2144250120008233,
+        "whisperMean": 9.9,
+        "ollamaMean": 13.65009569444445,
+        "ollamaSampleCpu": {
+          "mean": 13.710722788998726,
+          "p95": 76.86886321029141,
+          "max": 99.87301139656118,
+          "min": 0.0,
+          "samples": 119
+        },
+        "totalMean": 54.06492518868266,
+        "clientSamples": {
+          "mean": 29.296340567408013,
+          "p95": 43.84855144855151,
+          "max": 45.712151394422456,
+          "min": 6.5298105682951375,
+          "samples": 118
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 5023.279127502441,
+        "p95": 5744.699317932129,
+        "max": 5974.729377746582,
+        "min": 490.1124267578125,
+        "samples": 120
+      },
+      "groupRssMiB": {
+        "mean": 3763.5651041666665,
+        "p95": 4409.984375,
+        "max": 4668.296875,
+        "min": 403.640625,
+        "samples": 120
+      },
+      "ollamaFootprintMiB": {
+        "mean": 4557.440688323974,
+        "p95": 5302.317832946777,
+        "max": 5612.146186828613,
+        "min": 48.46959686279297,
+        "samples": 120
+      },
+      "inferenceCount": 12,
+      "inferenceDurationMs": {
+        "mean": 662.1290487500033,
+        "p95": 751.109625000041,
+        "max": 751.109625000041,
+        "min": 607.0111250000191,
+        "samples": 12
+      },
+      "inferenceCpuCorePercent": {
+        "mean": 149.63300775684053,
+        "p95": 155.77509816375252,
+        "max": 155.77509816375252,
+        "min": 144.5785566709406,
+        "samples": 12
+      },
+      "inferencePeakRssMiB": {
+        "mean": 277.6888020833333,
+        "p95": 278.90625,
+        "max": 278.90625,
+        "min": 276.25,
+        "samples": 12
+      },
+      "apiLatencyMs": {
+        "mean": 2.2736833522988795,
+        "p95": 4.533457977231592,
+        "max": 20.138958003371954,
+        "min": 0.9087920188903809,
+        "samples": 120
+      },
+      "independentTaskMs": {
+        "mean": 6.081888835372713,
+        "p95": 10.763540980406106,
+        "max": 10.763540980406106,
+        "min": 5.412709026131779,
+        "samples": 12
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.83711738655462,
+        "p95": 24.100863,
+        "max": 34.734079,
+        "min": 21.053439,
+        "samples": 119
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 10.672820782608696,
+        "p95": 24.71745,
+        "max": 24.71745,
+        "min": 6.725285,
+        "samples": 23
+      },
+      "batteryPercentFirstLast": [
+        31,
+        30
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 1,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 1,
+      "maxLlmQueued": 0
+    },
+    "speechLastTwoMinutes": {
+      "startUtc": "2026-09-08T12:16:03.264000+00:00",
+      "endUtc": "2026-09-08T12:18:03.264000+00:00",
+      "durationSeconds": 120.0,
+      "cpuCorePercent": {
+        "clientMean": 13.6179921434614,
+        "serverMean": 1.2248784672857755,
+        "whisperMean": 11.450000000000001,
+        "ollamaMean": 11.024913611111108,
+        "ollamaSampleCpu": {
+          "mean": 11.16526513040996,
+          "p95": 65.0232082173097,
+          "max": 98.91374168239113,
+          "min": 0.0,
+          "samples": 118
+        },
+        "totalMean": 37.31778422185828,
+        "clientSamples": {
+          "mean": 13.615550066440202,
+          "p95": 39.71543824701197,
+          "max": 44.15054726368173,
+          "min": 5.578121878121659,
+          "samples": 119
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 5108.071387475278,
+        "p95": 5961.2470626831055,
+        "max": 6166.496604919434,
+        "min": 369.03849029541016,
+        "samples": 119
+      },
+      "groupRssMiB": {
+        "mean": 3789.5053834033615,
+        "p95": 4407.046875,
+        "max": 4668.296875,
+        "min": 385.046875,
+        "samples": 119
+      },
+      "ollamaFootprintMiB": {
+        "mean": 4716.591657301959,
+        "p95": 5612.161811828613,
+        "max": 5612.521186828613,
+        "min": 50.09459686279297,
+        "samples": 119
+      },
+      "inferenceCount": 14,
+      "inferenceDurationMs": {
+        "mean": 656.9962587857236,
+        "p95": 751.109625000041,
+        "max": 751.109625000041,
+        "min": 564.644083000021,
+        "samples": 14
+      },
+      "inferenceCpuCorePercent": {
+        "mean": 149.55889587726853,
+        "p95": 157.6397247941045,
+        "max": 157.6397247941045,
+        "min": 143.51077338601308,
+        "samples": 14
+      },
+      "inferencePeakRssMiB": {
+        "mean": 277.6953125,
+        "p95": 278.90625,
+        "max": 278.90625,
+        "min": 276.671875,
+        "samples": 14
+      },
+      "apiLatencyMs": {
+        "mean": 2.7421015498674466,
+        "p95": 6.092499999795109,
+        "max": 19.285791961010545,
+        "min": 1.411625009495765,
+        "samples": 119
+      },
+      "independentTaskMs": {
+        "mean": 5.837777678001051,
+        "p95": 6.712625036016107,
+        "max": 6.712625036016107,
+        "min": 5.412709026131779,
+        "samples": 12
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.759043266666666,
+        "p95": 24.100863,
+        "max": 34.734079,
+        "min": 21.053439,
+        "samples": 120
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 16.613162652173912,
+        "p95": 24.71745,
+        "max": 24.71745,
+        "min": 8.436618,
+        "samples": 23
+      },
+      "batteryPercentFirstLast": [
+        31,
+        30
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 1,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 1,
+      "maxLlmQueued": 0
+    },
+    "asr": {
+      "schemaVersion": 1,
+      "status": "complete",
+      "models": {
+        "provisional": "base",
+        "revised": "base",
+        "highQuality": "base"
+      },
+      "pending": {
+        "provisional": 0,
+        "revised": 0,
+        "highQuality": 0
+      },
+      "backlog": {
+        "transcription": {
+          "queued": 0,
+          "active": 0,
+          "total": 0
+        },
+        "refinement": {
+          "queued": 0,
+          "active": 0,
+          "total": 0
+        },
+        "highQuality": {
+          "queued": 0,
+          "active": 0,
+          "total": 0
+        }
+      },
+      "failed": {
+        "provisional": 0,
+        "revised": 0,
+        "highQuality": 0
+      },
+      "updatedAt": "2026-09-08T12:18:03.265Z",
+      "completed": {
+        "provisional": 23,
+        "revised": 0,
+        "highQuality": 0
+      },
+      "segmentCount": 23
+    },
+    "postStopIdle": {
+      "startUtc": "2026-09-08T12:18:13.264000+00:00",
+      "endUtc": "2026-09-08T12:19:23.264000+00:00",
+      "durationSeconds": 70.0,
+      "cpuCorePercent": {
+        "clientMean": 0.48561895132168165,
+        "serverMean": 1.064097454063348,
+        "whisperMean": 0.0,
+        "ollamaMean": 0.250079107142864,
+        "ollamaSampleCpu": {
+          "mean": 0.25281923661086947,
+          "p95": 0.4177324528839393,
+          "max": 0.4719065343591589,
+          "min": 0.0,
+          "samples": 69
+        },
+        "totalMean": 1.7997955125278937,
+        "clientSamples": {
+          "mean": 0.4854261400280533,
+          "p95": 1.9410945273633307,
+          "max": 8.370717131473988,
+          "min": 0.09780876494024286,
+          "samples": 69
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 3863.3155404227123,
+        "p95": 5085.652534484863,
+        "max": 5089.433921813965,
+        "min": 316.49195861816406,
+        "samples": 70
+      },
+      "groupRssMiB": {
+        "mean": 2986.243080357143,
+        "p95": 3928.703125,
+        "max": 3932.875,
+        "min": 354.15625,
+        "samples": 70
+      },
+      "ollamaFootprintMiB": {
+        "mean": 3583.771318054199,
+        "p95": 4807.14559173584,
+        "max": 4807.14559173584,
+        "min": 49.57897186279297,
+        "samples": 70
+      },
+      "inferenceCount": 0,
+      "inferenceDurationMs": null,
+      "inferenceCpuCorePercent": null,
+      "inferencePeakRssMiB": null,
+      "apiLatencyMs": {
+        "mean": 2.9545458416188404,
+        "p95": 3.6577499704435468,
+        "max": 3.8147500017657876,
+        "min": 2.3419579956680536,
+        "samples": 70
+      },
+      "independentTaskMs": {
+        "mean": 5.519761853585286,
+        "p95": 5.5632920120842755,
+        "max": 5.5632920120842755,
+        "min": 5.475500016473234,
+        "samples": 7
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.3614582,
+        "p95": 21.954559,
+        "max": 23.969791,
+        "min": 21.053439,
+        "samples": 70
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 10.374437785714285,
+        "p95": 10.5534,
+        "max": 10.5534,
+        "min": 9.718243,
+        "samples": 14
+      },
+      "batteryPercentFirstLast": [
+        30,
+        30
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 0,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 0,
+      "maxLlmQueued": 0
+    },
+    "audioSeconds": 202.069,
+    "speechChunks": 23,
+    "transcribedChunks": 23,
+    "failedChunks": 0,
+    "decodeAudioRatio": 0.07351313907625666,
+    "translation": {
+      "model": "qwen3.5:4b",
+      "live": {
+        "enabled": true,
+        "status": "idle"
+      },
+      "units": 46,
+      "translated": 45,
+      "errors": 0,
+      "stale": true
+    }
+  },
+  "baseWith1_5B": {
+    "baseline": null,
+    "speech": {
+      "startUtc": "2026-09-08T12:22:38.829000+00:00",
+      "endUtc": "2026-09-08T12:26:58.732000+00:00",
+      "durationSeconds": 259.903,
+      "cpuCorePercent": {
+        "clientMean": 8.771972064384794,
+        "serverMean": 1.3170500971167016,
+        "whisperMean": 9.934475554341427,
+        "ollamaMean": 4.0942927906436895,
+        "ollamaSampleCpu": {
+          "mean": 4.117400613199236,
+          "p95": 37.709526684467804,
+          "max": 104.03321964564671,
+          "min": 0.0,
+          "samples": 258
+        },
+        "totalMean": 24.11779050648661,
+        "clientSamples": {
+          "mean": 8.771696394074311,
+          "p95": 10.817529880478094,
+          "max": 41.15318725099601,
+          "min": 6.2809145129225055,
+          "samples": 258
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 555.647235914547,
+        "p95": 805.8939743041992,
+        "max": 919.1769180297852,
+        "min": 315.85677337646484,
+        "samples": 259
+      },
+      "groupRssMiB": {
+        "mean": 1660.202039092664,
+        "p95": 1915.640625,
+        "max": 2083.703125,
+        "min": 623.03125,
+        "samples": 259
+      },
+      "ollamaFootprintMiB": {
+        "mean": 210.02923145073262,
+        "p95": 281.61177825927734,
+        "max": 336.95552825927734,
+        "min": 47.90709686279297,
+        "samples": 259
+      },
+      "inferenceCount": 27,
+      "inferenceDurationMs": {
+        "mean": 633.0214784074072,
+        "p95": 806.1467499999853,
+        "max": 992.634625000006,
+        "min": 551.090750000003,
+        "samples": 27
+      },
+      "inferenceCpuCorePercent": {
+        "mean": 151.815845335161,
+        "p95": 157.0988875553211,
+        "max": 157.42109267728992,
+        "min": 124.9200832582273,
+        "samples": 27
+      },
+      "inferencePeakRssMiB": {
+        "mean": 277.41493055555554,
+        "p95": 278.875,
+        "max": 279.40625,
+        "min": 274.15625,
+        "samples": 27
+      },
+      "apiLatencyMs": {
+        "mean": 2.154229092411697,
+        "p95": 3.3693339792080224,
+        "max": 5.38216601125896,
+        "min": 0.8831250015646219,
+        "samples": 259
+      },
+      "independentTaskMs": {
+        "mean": 5.919908520299941,
+        "p95": 6.517332978546619,
+        "max": 15.059500001370907,
+        "min": 5.4032920161262155,
+        "samples": 25
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.347720846153845,
+        "p95": 21.774335,
+        "max": 28.639231,
+        "min": 21.053439,
+        "samples": 260
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 8.046182274509803,
+        "p95": 9.62046,
+        "max": 9.774548,
+        "min": 6.512904,
+        "samples": 51
+      },
+      "batteryPercentFirstLast": [
+        29,
+        28
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 1,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 1,
+      "maxLlmQueued": 0
+    },
+    "speechFirstTwoMinutes": {
+      "startUtc": "2026-09-08T12:22:48.829000+00:00",
+      "endUtc": "2026-09-08T12:24:48.829000+00:00",
+      "durationSeconds": 120.0,
+      "cpuCorePercent": {
+        "clientMean": 8.853754369965039,
+        "serverMean": 1.1393175527871098,
+        "whisperMean": 8.808333333333334,
+        "ollamaMean": 3.9136295486111154,
+        "ollamaSampleCpu": {
+          "mean": 3.9685580913956535,
+          "p95": 37.709526684467804,
+          "max": 71.19572340004794,
+          "min": 0.0,
+          "samples": 118
+        },
+        "totalMean": 22.715034804696597,
+        "clientSamples": {
+          "mean": 8.853745277660709,
+          "p95": 10.710568295114639,
+          "max": 12.86959122632113,
+          "min": 7.119461077844309,
+          "samples": 118
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 557.554946194176,
+        "p95": 813.9857330322266,
+        "max": 875.3312683105469,
+        "min": 336.3570251464844,
+        "samples": 119
+      },
+      "groupRssMiB": {
+        "mean": 1740.0882352941176,
+        "p95": 2039.0,
+        "max": 2083.703125,
+        "min": 625.109375,
+        "samples": 119
+      },
+      "ollamaFootprintMiB": {
+        "mean": 213.7442570534073,
+        "p95": 276.26802825927734,
+        "max": 328.26802825927734,
+        "min": 60.82897186279297,
+        "samples": 119
+      },
+      "inferenceCount": 11,
+      "inferenceDurationMs": {
+        "mean": 624.3462500909121,
+        "p95": 687.4429999999993,
+        "max": 687.4429999999993,
+        "min": 551.090750000003,
+        "samples": 11
+      },
+      "inferenceCpuCorePercent": {
+        "mean": 153.92769325612923,
+        "p95": 157.0988875553211,
+        "max": 157.0988875553211,
+        "min": 147.3195195559858,
+        "samples": 11
+      },
+      "inferencePeakRssMiB": {
+        "mean": 277.671875,
+        "p95": 278.453125,
+        "max": 278.453125,
+        "min": 276.90625,
+        "samples": 11
+      },
+      "apiLatencyMs": {
+        "mean": 1.7509976154420244,
+        "p95": 2.538457978516817,
+        "max": 2.7784169651567936,
+        "min": 1.000374963041395,
+        "samples": 119
+      },
+      "independentTaskMs": {
+        "mean": 5.491642587003298,
+        "p95": 5.568250024225563,
+        "max": 5.568250024225563,
+        "min": 5.4032920161262155,
+        "samples": 12
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.271073133333335,
+        "p95": 21.774335,
+        "max": 21.889023,
+        "min": 21.053439,
+        "samples": 120
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 8.115566833333332,
+        "p95": 9.62046,
+        "max": 9.62046,
+        "min": 6.512904,
+        "samples": 24
+      },
+      "batteryPercentFirstLast": [
+        29,
+        28
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 1,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 1,
+      "maxLlmQueued": 0
+    },
+    "speechLastTwoMinutes": {
+      "startUtc": "2026-09-08T12:24:58.732000+00:00",
+      "endUtc": "2026-09-08T12:26:58.732000+00:00",
+      "durationSeconds": 120.0,
+      "cpuCorePercent": {
+        "clientMean": 8.770766679508867,
+        "serverMean": 1.437567257834764,
+        "whisperMean": 10.433333333333334,
+        "ollamaMean": 3.861331388888895,
+        "ollamaSampleCpu": {
+          "mean": 3.8936121295244672,
+          "p95": 37.729710814815945,
+          "max": 65.43448617914876,
+          "min": 0.0,
+          "samples": 119
+        },
+        "totalMean": 24.50299865956586,
+        "clientSamples": {
+          "mean": 8.770239117492766,
+          "p95": 11.962399999999782,
+          "max": 41.15318725099601,
+          "min": 6.2809145129225055,
+          "samples": 119
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 563.7323919296265,
+        "p95": 805.8939743041992,
+        "max": 919.1769180297852,
+        "min": 396.73724365234375,
+        "samples": 120
+      },
+      "groupRssMiB": {
+        "mean": 1649.0139322916666,
+        "p95": 1808.96875,
+        "max": 2036.609375,
+        "min": 639.546875,
+        "samples": 120
+      },
+      "ollamaFootprintMiB": {
+        "mean": 212.00236428578694,
+        "p95": 281.61177825927734,
+        "max": 336.95552825927734,
+        "min": 48.93834686279297,
+        "samples": 120
+      },
+      "inferenceCount": 13,
+      "inferenceDurationMs": {
+        "mean": 645.9587467692282,
+        "p95": 992.634625000006,
+        "max": 992.634625000006,
+        "min": 552.7308330000087,
+        "samples": 13
+      },
+      "inferenceCpuCorePercent": {
+        "mean": 150.58321277668108,
+        "p95": 157.42109267728992,
+        "max": 157.42109267728992,
+        "min": 124.9200832582273,
+        "samples": 13
+      },
+      "inferencePeakRssMiB": {
+        "mean": 277.38822115384613,
+        "p95": 279.40625,
+        "max": 279.40625,
+        "min": 274.15625,
+        "samples": 13
+      },
+      "apiLatencyMs": {
+        "mean": 2.6220558313070796,
+        "p95": 3.8727499777451158,
+        "max": 5.38216601125896,
+        "min": 1.7972909845411777,
+        "samples": 120
+      },
+      "independentTaskMs": {
+        "mean": 6.467867547392168,
+        "p95": 15.059500001370907,
+        "max": 15.059500001370907,
+        "min": 5.456792016047984,
+        "samples": 11
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.433001666666666,
+        "p95": 21.856255,
+        "max": 28.639231,
+        "min": 21.053439,
+        "samples": 120
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 7.8547963478260865,
+        "p95": 8.207082,
+        "max": 8.207082,
+        "min": 6.895404,
+        "samples": 23
+      },
+      "batteryPercentFirstLast": [
+        28,
+        28
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 1,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 1,
+      "maxLlmQueued": 0
+    },
+    "asr": {
+      "schemaVersion": 1,
+      "status": "complete",
+      "models": {
+        "provisional": "base",
+        "revised": "base",
+        "highQuality": "base"
+      },
+      "pending": {
+        "provisional": 0,
+        "revised": 0,
+        "highQuality": 0
+      },
+      "backlog": {
+        "transcription": {
+          "queued": 0,
+          "active": 0,
+          "total": 0
+        },
+        "refinement": {
+          "queued": 0,
+          "active": 0,
+          "total": 0
+        },
+        "highQuality": {
+          "queued": 0,
+          "active": 0,
+          "total": 0
+        }
+      },
+      "failed": {
+        "provisional": 0,
+        "revised": 0,
+        "highQuality": 0
+      },
+      "updatedAt": "2026-09-08T12:26:58.733Z",
+      "completed": {
+        "provisional": 27,
+        "revised": 0,
+        "highQuality": 0
+      },
+      "segmentCount": 27
+    },
+    "postStopIdle": {
+      "startUtc": "2026-09-08T12:27:08.732000+00:00",
+      "endUtc": "2026-09-08T12:28:18.732000+00:00",
+      "durationSeconds": 70.0,
+      "cpuCorePercent": {
+        "clientMean": 0.21143199572581745,
+        "serverMean": 0.958392892337739,
+        "whisperMean": 0.0,
+        "ollamaMean": 0.23060244047619244,
+        "ollamaSampleCpu": {
+          "mean": 0.23314122892141187,
+          "p95": 0.36681728023565524,
+          "max": 0.4190489723422142,
+          "min": 0.0,
+          "samples": 69
+        },
+        "totalMean": 1.4004273285397488,
+        "clientSamples": {
+          "mean": 0.21143391012840046,
+          "p95": 0.34696517412936606,
+          "max": 0.4086653386454372,
+          "min": 0.13852295409181087,
+          "samples": 69
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 432.0724024091448,
+        "p95": 467.61634063720703,
+        "max": 467.61634063720703,
+        "min": 346.23987579345703,
+        "samples": 70
+      },
+      "groupRssMiB": {
+        "mean": 1419.1912946428572,
+        "p95": 1727.671875,
+        "max": 1727.765625,
+        "min": 600.828125,
+        "samples": 70
+      },
+      "ollamaFootprintMiB": {
+        "mean": 146.4871819632394,
+        "p95": 179.33043670654297,
+        "max": 179.33043670654297,
+        "min": 58.32897186279297,
+        "samples": 70
+      },
+      "inferenceCount": 0,
+      "inferenceDurationMs": null,
+      "inferenceCpuCorePercent": null,
+      "inferencePeakRssMiB": null,
+      "apiLatencyMs": {
+        "mean": 3.241491040846865,
+        "p95": 3.9342499803751707,
+        "max": 3.969541983678937,
+        "min": 2.645417000167072,
+        "samples": 70
+      },
+      "independentTaskMs": {
+        "mean": 5.49255356392158,
+        "p95": 5.586332990787923,
+        "max": 5.586332990787923,
+        "min": 5.446416966151446,
+        "samples": 7
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.273452714285714,
+        "p95": 21.790719,
+        "max": 23.592959,
+        "min": 21.053439,
+        "samples": 70
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 6.603022,
+        "p95": 6.895404,
+        "max": 6.895404,
+        "min": 6.31064,
+        "samples": 14
+      },
+      "batteryPercentFirstLast": [
+        28,
+        28
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 0,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 0,
+      "maxLlmQueued": 0
+    },
+    "postUnloadIdle": {
+      "startUtc": "2026-09-08T12:28:18.732000+00:00",
+      "endUtc": "2026-09-08T12:29:18.732000+00:00",
+      "durationSeconds": 60.0,
+      "cpuCorePercent": {
+        "clientMean": 0.4811086497346858,
+        "serverMean": 0.9900367564514749,
+        "whisperMean": 0.0,
+        "ollamaMean": 0.02494833333332262,
+        "ollamaSampleCpu": {
+          "mean": 0.02569207009236489,
+          "p95": 0.05428615809891983,
+          "max": 0.6951612302813934,
+          "min": 0.0,
+          "samples": 58
+        },
+        "totalMean": 1.4960937395194833,
+        "clientSamples": {
+          "mean": 0.4814478006127757,
+          "p95": 0.672127872127879,
+          "max": 11.221756487025852,
+          "min": 0.10905472636817991,
+          "samples": 58
+        }
+      },
+      "groupPhysicalFootprintMiB": {
+        "mean": 340.4486036139019,
+        "p95": 346.34925079345703,
+        "max": 346.34925079345703,
+        "min": 308.6131134033203,
+        "samples": 59
+      },
+      "groupRssMiB": {
+        "mean": 598.2251059322034,
+        "p95": 601.46875,
+        "max": 601.484375,
+        "min": 572.28125,
+        "samples": 59
+      },
+      "ollamaFootprintMiB": {
+        "mean": 56.198145591606526,
+        "p95": 58.32897186279297,
+        "max": 58.32897186279297,
+        "min": 51.34459686279297,
+        "samples": 59
+      },
+      "inferenceCount": 0,
+      "inferenceDurationMs": null,
+      "inferenceCpuCorePercent": null,
+      "inferencePeakRssMiB": null,
+      "apiLatencyMs": {
+        "mean": 3.2173114319695,
+        "p95": 3.918917034752667,
+        "max": 3.9259589975699782,
+        "min": 2.5962910149246454,
+        "samples": 59
+      },
+      "independentTaskMs": {
+        "mean": 5.484826513566077,
+        "p95": 5.52275002701208,
+        "max": 5.52275002701208,
+        "min": 5.419749999418855,
+        "samples": 6
+      },
+      "eventLoopP99Ms": {
+        "mean": 21.229840066666668,
+        "p95": 21.676031,
+        "max": 21.790719,
+        "min": 21.069823,
+        "samples": 60
+      },
+      "wholeMacDischargeWatts": {
+        "mean": 6.413650166666667,
+        "p95": 6.512904,
+        "max": 6.512904,
+        "min": 6.31064,
+        "samples": 12
+      },
+      "batteryPercentFirstLast": [
+        28,
+        27
+      ],
+      "thermalStates": [
+        "nominal"
+      ],
+      "maxWhisperActive": 0,
+      "maxWhisperQueued": 0,
+      "maxLlmActive": 0,
+      "maxLlmQueued": 0
+    },
+    "audioSeconds": 259.168,
+    "speechChunks": 27,
+    "transcribedChunks": 27,
+    "failedChunks": 0,
+    "decodeAudioRatio": 0.06594787904756759,
+    "translation": {
+      "model": "qwen2.5:1.5b-instruct",
+      "live": {
+        "enabled": true,
+        "status": "idle"
+      },
+      "units": 51,
+      "translated": 50,
+      "errors": 0,
+      "stale": true
+    }
+  },
+  "caveats": [
+    "Single host; unrelated applications remained active.",
+    "Per-process energy counters are incomplete and are not reported as total app energy.",
+    "RSS and physical footprint differ, especially for mapped/Metal model memory.",
+    "1.5B performance recording preceded final translator prompt refinement; final prompt separately spot-checked."
+  ]
+}

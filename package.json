@@ -1,0 +1,92 @@
+{
+  "name": "local-lecture-copilot",
+  "version": "1.4.2",
+  "private": true,
+  "type": "module",
+  "main": "desktop/main.js",
+  "author": "Local Lecture Copilot",
+  "description": "Local-first lecture transcription and course-aware notes",
+  "scripts": {
+    "prestart": "npm run stt:prepare",
+    "start": "node src/server.js",
+    "predev": "npm run stt:prepare",
+    "dev": "node --watch src/server.js",
+    "stt:prepare": "node scripts/prepare-stt-runtime.js",
+    "desktop:dev": "npm run stt:prepare && electron .",
+    "desktop:build": "npm run stt:prepare && npm run build && electron-builder --publish never",
+    "desktop:build:mac": "node scripts/prepare-stt-runtime.js --platform=darwin --arch=arm64 && npm run build -- --platform=darwin --arch=arm64 && electron-builder --mac --arm64 --publish never",
+    "desktop:build:win": "node scripts/prepare-stt-runtime.js --platform=win32 --arch=x64 && npm run build && electron-builder --win --x64 --publish never",
+    "desktop:build:linux": "node scripts/prepare-stt-runtime.js --platform=linux --arch=x64 && npm run build && electron-builder --linux --x64 --publish never",
+    "windows:validate": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/test-windows.ps1 -Mode Full",
+    "windows:smoke:server": "node scripts/smoke-server.js",
+    "test": "node --test test/*.test.js",
+    "typecheck": "node --check src/server.js && node --check src/app.js && node --check src/asr-pipeline.js && node --check src/audio.js && node --check src/lib.js && node --check src/llm-lifecycle.js && node --check src/store.js && node --check src/storage.js && node --check src/settings.js && node --check src/pipeline.js && node --check src/conservative-correction.js && node --check src/conservative-retrieval.js && node --check src/version-b-baseline.js && node --check scripts/rerun-version-c.js && node --check scripts/smoke-server.js && node --check scripts/windows-source-provenance.js && node --check src/paragraphs.js && node --check src/raw-translation.js && node --check src/translation-profiler.js && node --check src/providers/llm.js && node --check src/providers/stt.js && node --check src/providers/whisper-models.js && node --check desktop/main.js && node --check desktop/runtime-paths.js && node --check desktop/preload.cjs && node --check web/i18n.js && node --check web/markdown.js && node --check web/editable-document.js && node --check web/session-deletion.js && node --check web/silence.js && node --check web/microphone.js && node --check web/audio-file.js && node --check web/app.js && node --check src/ollama-bootstrap.js && node --check scripts/live-dictation-smoke.js",
+    "lint": "node scripts/lint.js",
+    "build": "node scripts/build.js",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build"
+  },
+  "build": {
+    "appId": "com.local.lecturecopilot",
+    "productName": "Local Lecture Copilot",
+    "directories": {
+      "app": "dist",
+      "buildResources": "build",
+      "output": "release"
+    },
+    "files": [
+      "**/*",
+      "!runtime/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "dist/runtime",
+        "to": "runtime",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "icon.png",
+        "to": "icon.png"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "icon": "build/icon.icns",
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "artifactName": "Coda-C-v${version}-macOS-${arch}.${ext}"
+    },
+    "dmg": {
+      "icon": "build/icon.icns"
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        "nsis",
+        "zip"
+      ],
+      "artifactName": "Coda-C-v${version}-Windows-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "artifactName": "Coda-C-v${version}-Windows-${arch}-Setup.${ext}"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "allowScripts": {
+    "electron@36.9.5": true,
+    "electron-winstaller@5.4.0": true
+  },
+  "devDependencies": {
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12"
+  }
+}
