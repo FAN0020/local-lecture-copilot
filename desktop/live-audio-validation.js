@@ -90,7 +90,7 @@ export async function validateLiveAudio(runtime, audioPath, evidence = {}) {
   current = await runtime.store.get(session.id);
   assert.equal(current.transcriptSegments[0].versions.revised, undefined, 'Whisper revision must wait for explicit user action');
   // The current product defers the stronger Whisper pass until an explicit user action.
-  await request(`${endpoint}/asr/revise`, { method: 'POST', json: {} });
+  await request(`${endpoint}/asr/revise`, { method: 'POST', json: {}, expected: 202 });
   await runtime.handler.idle();
   current = await runtime.store.get(session.id);
   const revised = current.transcriptSegments[0].versions.revised;
