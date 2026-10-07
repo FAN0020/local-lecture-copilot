@@ -1,6 +1,6 @@
 # Latest verification — 7 October 2026
 
-This is a fresh local verification of the current Version C code on an Apple Silicon Mac. It covers software and speech-pipeline behavior; it is not a transcript-accuracy score.
+This records local verification on an Apple Silicon Mac and successful public macOS, Linux, and Windows CI on 7 October 2026. It covers software and speech-pipeline behavior; it is not a transcript-accuracy score.
 
 ## Automated checks
 
@@ -10,7 +10,7 @@ This is a fresh local verification of the current Version C code on an Apple Sil
 - Node test suite: **395 passed, 0 failed**.
 - Production bundle build passed.
 
-The test command is scoped to top-level `test/*.test.js` files so ignored local archives under `test/` cannot be mistaken for this repository's tests.
+The test runner explicitly enumerates top-level `test/*.test.js` files. This works without shell glob expansion on Windows and keeps ignored local archives under `test/` out of the suite.
 
 ## Real speech pipeline
 
@@ -29,4 +29,13 @@ The current branch has deterministic guards and a controlled fixed-input evaluat
 
 ## Cross-platform status
 
-An earlier Windows x64 run passed its 19 checks on the then-current source. The latest pre-fix workflow had stale smoke expectations and attempted to publish an installer during validation. Those checks have been updated and the current workflow is being rerun; consult the repository Actions page for the latest Windows/macOS/Linux result.
+The public source at [77f87a4](https://github.com/FAN0020/local-lecture-copilot/commit/77f87a4a9dc8ef49c1c2caa73c17be619b3b7c8d) passed both workflows:
+
+| Platform | Result | Evidence |
+| --- | --- | --- |
+| macOS and Ubuntu | Syntax, lint, full tests, build, real-speech server pipeline, and Electron startup/shutdown passed | [Successful run](https://github.com/FAN0020/local-lecture-copilot/actions/runs/37631625925) |
+| Windows x64 | Full suite: **390 passed, 0 failed, 5 platform skips**. Server/native speech checks, package build, and packaged Electron smoke passed | [Successful run](https://github.com/FAN0020/local-lecture-copilot/actions/runs/37631625448) |
+
+The Windows workflow builds and checks the package, but skips executing the installer. Physical microphone capture and broad transcript quality are outside these checks.
+
+Before release, stale Electron-smoke expectations were aligned with explicit transcript revision and its HTTP 202 response; packaging was made non-publishing; the test command was made portable; and Windows test-directory cleanup gained bounded retries for transient filesystem errors. Required test/build failures still fail CI. Artifact uploads are best-effort because the account has encountered storage limits; the linked workflow logs retain the check results.

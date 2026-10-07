@@ -2,13 +2,15 @@
 
 A local-first lecture workspace for transcription, bilingual reading, course-grounded notes, and structured outlines. This is an NTU team project; this checkout contains Fan Yupei's Version C / Conservative Material Repairs (C6) contribution on top of the shared application.
 
+[![macOS and Linux validation](https://github.com/FAN0020/local-lecture-copilot/actions/workflows/platform-validation.yml/badge.svg)](https://github.com/FAN0020/local-lecture-copilot/actions/workflows/platform-validation.yml) [![Windows x64 validation](https://github.com/FAN0020/local-lecture-copilot/actions/workflows/windows-validation.yml/badge.svg)](https://github.com/FAN0020/local-lecture-copilot/actions/workflows/windows-validation.yml)
+
 ## Reviewer snapshot
 
 **Classification:** Local speech AI · desktop application · NTU team project. **Stack:** Electron, Node.js, whisper.cpp, Ollama.
 
 | Area | Measured outcome | Evidence and scope |
 | --- | --- | --- |
-| Software checks | **395/395 tests passed**; syntax, lint, and build passed | [Verification](docs/latest-verification.md); provider behavior is mocked in automated tests |
+| Software checks | **395/395 local tests passed**; macOS, Linux, and Windows CI passed | [Verification](docs/latest-verification.md); Windows has 390 passed and 5 platform skips; providers are mocked in automated tests |
 | Real speech workflow | **3/3 provisional + 3/3 requested revisions**; queues and processes drained | [Native smoke](docs/latest-verification.md#real-speech-pipeline); pinned English audio on macOS |
 | ASR performance | **66/66 chunks** over 10.5 minutes; **0.620 s** mean decode per chunk | [Benchmark](docs/performance-validation-2026-09-08.md); one M5 Pro and one English fixture |
 | C6 material repairs | **20 fixed slices**; proxy WER **0.3271 → 0.3243**; 2 improved, 18 unchanged | [Evaluation](docs/c6-evaluation-2026-10-07.md); Large-v3 reference is not human-verified ground truth |
