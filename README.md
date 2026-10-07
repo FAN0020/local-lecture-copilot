@@ -18,7 +18,7 @@ A local-first lecture workspace for transcription, bilingual reading, course-gro
 | [C6 fixed-input evaluation](docs/c6-evaluation-2026-10-07.md) | Results against an unverified transcript proxy, with limits |
 | [Verify](#verify) | Current command for syntax, lint, tests, and build |
 
-This branch is **PE6203 Version C / Conservative Material Repairs (C6)**. It retains the shared team's audio, Whisper, persistence, and UI foundation while limiting cleanup to small validated terminology/name/number/formula substitutions supported by course material. Notes and Outline retain material-grounded generation. The [architecture](docs/architecture.md) documents the current implementation. The [fixed-input C6 evaluation](docs/c6-evaluation-2026-10-07.md) reports a modest change against an unverified transcript proxy, not a human accuracy result.
+This is the **PE6203 Version C / Conservative Material Repairs (C6)** contribution. It retains the shared team's audio, Whisper, persistence, and UI foundation while limiting cleanup to small validated terminology/name/number/formula substitutions supported by course material. Notes and Outline retain material-grounded generation. The [architecture](docs/architecture.md) documents the current implementation. The [fixed-input C6 evaluation](docs/c6-evaluation-2026-10-07.md) reports a modest change against an unverified transcript proxy, not a human accuracy result.
 
 ## What works
 
