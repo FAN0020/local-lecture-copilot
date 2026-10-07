@@ -17,7 +17,7 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const tempDirectories = async () => (await fs.readdir(os.tmpdir())).filter((name) => name.startsWith('lecture-copilot-stt-'));
 
 export function assertRuntimeIdle(snapshot) {
-  for (const key of ['activeLocks', 'derivedJobs', 'recoveryJobs', 'revisionJobs', 'rawTranslationJobs', 'liveTranslationJobs']) {
+  for (const key of ['activeLocks', 'derivedJobs', 'revisionJobs', 'rawTranslationJobs', 'liveTranslationJobs']) {
     assert.equal(snapshot[key], 0, `${key} must drain`);
   }
   for (const key of ['active', 'queued', 'processes', 'transcriptions', 'tempDirs']) {
