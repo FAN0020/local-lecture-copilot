@@ -126,7 +126,8 @@ async function fixture(t, outputs = [], llm = new TranslationLLM()) {
   const handler = makeHandler(store, llm);
   t.after(async () => {
     await Promise.all(handlers.map((current) => current.close()));
-    await fs.rm(root, { recursive: true, force: true });
+    // Windows may briefly retain directory entries after the providers close.
+    await fs.rm(root, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 });
   });
   const session = await request(handler, '/api/sessions', { method: 'POST', body: { llmModel: 'mock-local:1b', targetLanguage: 'Chinese' } });
   const base = `/api/sessions/${session.id}`;

@@ -4,9 +4,14 @@ A local-first lecture workspace for transcription, bilingual reading, course-gro
 
 ## Reviewer snapshot
 
-| Classification | Measured outcome | Limits |
+**Classification:** Local speech AI · desktop application · NTU team project. **Stack:** Electron, Node.js, whisper.cpp, Ollama.
+
+| Area | Measured outcome | Evidence and scope |
 | --- | --- | --- |
-| Local-first speech AI · desktop product · team project | **395 automated tests passed** on the current source. A fresh macOS run used real `whisper.cpp` audio for three chunks; provisional transcription and the user-requested transcript-improvement pass completed, and all inference work drained. A separate 10.5-minute M5 Pro run completed **66/66 chunks** at 0.620 seconds average decode time per chunk. On 20 fixed C6 slices, WER vs an unverified Large-v3 transcript proxy moved **0.3271 → 0.3243**; 2 changed cases improved by that proxy, 18 were unchanged. | The 10.5-minute measurements cover one M5 Pro and one English fixture. The C6 proxy is not human-verified ground truth and supports no broad accuracy claim. Neither result establishes accuracy across accents or devices. |
+| Software checks | **395/395 tests passed**; syntax, lint, and build passed | [Verification](docs/latest-verification.md); provider behavior is mocked in automated tests |
+| Real speech workflow | **3/3 provisional + 3/3 requested revisions**; queues and processes drained | [Native smoke](docs/latest-verification.md#real-speech-pipeline); pinned English audio on macOS |
+| ASR performance | **66/66 chunks** over 10.5 minutes; **0.620 s** mean decode per chunk | [Benchmark](docs/performance-validation-2026-09-08.md); one M5 Pro and one English fixture |
+| C6 material repairs | **20 fixed slices**; proxy WER **0.3271 → 0.3243**; 2 improved, 18 unchanged | [Evaluation](docs/c6-evaluation-2026-10-07.md); Large-v3 reference is not human-verified ground truth |
 
 ## Contents
 
